@@ -36,33 +36,15 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+  color: rgba(39, 33, 66, 0.7);
 }
 .project-description {
   padding: 120px 60px;
 }
-@media (max-width: 780px) {
-  h1 {
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 32px;
-    margin-top: 20px;
-  }
-  h3 {
-    margin: 10px 50px;
-  }
-  .hero p {
-    font-size: 22px;
-  }
-  .hero {
-    padding: 70px 20px;
-  }
-  .project-description {
-    padding: 50px 30px;
-  }
-  .call-to-action {
-    padding: 0px 0px;
-  }
+.call-to-action {
+  background: var(--secondary-color);
+  border-radius: 20px;
+  padding: 50px 120px;
 }
 
 .hero {
@@ -88,6 +70,23 @@ p {
   color: #272142;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 85px;
+}
+
+.about-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .btn-branding {
   line-height: 27px;
   border-radius: 4px;
@@ -108,12 +107,6 @@ p {
   color: var(--branding-color);
   font-weight: 500;
   text-decoration: none;
-}
-
-.call-to-action {
-  background: var(--secondary-color);
-  border-radius: 20px;
-  padding: 50px 120px;
 }
 
 .social {
@@ -143,4 +136,33 @@ p {
   font-size: 18px;
   border-radius: 50%;
   color: var(--branding-color);
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 22px;
+  }
+  .hero {
+    padding: 70px 20px;
+  }
+  .project-description {
+    padding: 50px 30px;
+  }
+  .call-to-action {
+    padding: 50px 20px;
+  }
+  .about-section h1 {
+    font-size: 30px;
+    line-height: 60px;
+  }
 }
