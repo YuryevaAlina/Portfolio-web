@@ -38,6 +38,13 @@ p {
   line-height: 30px;
   color: rgba(39, 33, 66, 0.7);
 }
+.contact a:link {
+  text-decoration: none;
+  color: rgba(39, 33, 66, 0.7);
+}
+.contact a:hover {
+  text-decoration: underline;
+}
 .project-description {
   padding: 120px 60px;
 }
