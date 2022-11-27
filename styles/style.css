@@ -125,7 +125,7 @@ nav li.active a {
 .blob {
   border-radius: 50%;
   width: 60%;
-  border: 6px solid var(--branding-color);
+  /*border: 6px solid var(--branding-color);*/
 }
 .header-container {
   padding: 160px 0px;
@@ -133,10 +133,6 @@ nav li.active a {
 
 .content {
   margin: 30px;
-}
-.content h1 {
-  font-size: 64px;
-  line-height: 85px;
 }
 
 .content h3 {
