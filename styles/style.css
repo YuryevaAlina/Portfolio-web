@@ -101,7 +101,7 @@ nav li.active a {
   padding: 120px 60px;
 }
 .call-to-action {
-  background: var(--secondary-color);
+  background: #d9f2ff;
   border-radius: 20px;
   padding: 50px 120px;
 }
