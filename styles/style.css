@@ -1,9 +1,15 @@
 /*
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --branding-color: #6c63ff;
-  --heading-font-family: "Playfair Display", serif;
+  --heading-font-family: "Circular Std", sans-serif;
   --default-font-family: "Poppins", sans-serif;
   --secondary-color: #f9f7fe;
 }
@@ -22,15 +28,15 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 96px;
-  line-height: 1.5;
+  font-size: 50px;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 40px;
 }
 h3 {
-  font-size: 64px;
+  font-size: 30px;
 }
 p {
   font-weight: normal;
@@ -48,8 +54,14 @@ a {
   max-width: 150px;
   max-height: 50px;
 }
+.logo-text {
+  color: black;
+  font-size: 18px;
+  padding: 0 5px;
+}
 nav {
   padding: 20px 0;
+  margin: 0 40px;
 }
 nav ul {
   margin: 0;
@@ -73,6 +85,10 @@ nav li.active a {
   color: var(--branding-color);
 }
 
+.container-fluid,
+.main-slider {
+  background: var(--secondary-color);
+}
 .contact a:link {
   text-decoration: none;
   font-size: 24px;
@@ -92,16 +108,7 @@ nav li.active a {
 
 .hero {
   background-color: var(--secondary-color);
-  padding: 160px 20px;
-  text-align: center;
-}
-
-.hero p {
-  font-size: 36px;
-  font-family: var (--default-font-family);
-  font-weight: bold;
-  margin: 0;
-  color: #272142;
+  padding: 160px 80px;
 }
 
 .hero h2 {
@@ -109,10 +116,17 @@ nav li.active a {
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
-  text-align: center;
   color: #272142;
 }
+.hero p {
+  font-size: 18px;
+}
 
+.blob {
+  border-radius: 50%;
+  width: 60%;
+  border: 6px solid var(--branding-color);
+}
 .header-container {
   padding: 160px 0px;
 }
@@ -148,6 +162,11 @@ nav li.active a {
   text-decoration: none;
 }
 
+.btn-branding:hover {
+  border: 1px solid var(--branding-color);
+  background: var(--secondary-color);
+  color: var(--branding-color);
+}
 .btn-branding-outline {
   line-height: 27px;
   border-radius: 4px;
@@ -158,7 +177,11 @@ nav li.active a {
   font-weight: 500;
   text-decoration: none;
 }
-
+.btn-branding-outline:hover {
+  border: 1px solid var(--secondary-color);
+  background: var(--branding-color);
+  color: white;
+}
 .social {
   display: flex;
   justify-content: center;
@@ -196,7 +219,7 @@ nav li.active a {
 
 @media (max-width: 920px) {
   h1 {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.1;
   }
   h2 {
@@ -207,7 +230,7 @@ nav li.active a {
     font-size: 28px;
   }
   .hero p {
-    font-size: 22px;
+    font-size: 18px;
   }
   .hero {
     padding: 70px 20px;
